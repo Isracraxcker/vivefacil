@@ -6,18 +6,6 @@
   </head>
   <body>
     <p>Redirigiendo a la app...</p>
-    <script>
-      // Tomar parámetros de Appwrite
-      const params = new URLSearchParams(window.location.search);
-      const userId = params.get("userId");
-      const secret = params.get("secret");
-
-      // Redirigir al esquema personalizado de tu app
-      if (userId && secret) {
-        window.location.href = `realestateapp://auth?userId=${userId}&secret=${secret}`;
-      } else {
-        document.body.innerHTML = "<h3>Error: Falta userId o secret</h3>";
-      }
-    </script>
+    
   </body>
 </html>
